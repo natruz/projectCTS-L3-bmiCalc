@@ -11,11 +11,12 @@ struct ContentView: View {
     
     @State var height: String = ""
     @State var weight: String = ""
-    
+
     let textBoxColour = Color(red: 143/255, green: 161/255, blue: 139/255)
     let textColour = Color(red: 100/255, green: 100/255, blue: 100/255)
     
-    var bmi: Int = 0
+    @State var bmi: String = ""
+    @State var healthRisk = ""
     let healthrisks = [
         "Possible nutritional deficiency and osteoporosis.",
         "Low risk (healthy range).",
@@ -43,6 +44,17 @@ struct ContentView: View {
                     .background(textBoxColour)
                     .cornerRadius(15)
                 Button {
+                    let bmiDoub = round((Double(weight) ?? 0) / pow((Double(height) ?? 0), 2) * 10) / 10
+                    bmi = String(bmiDoub)
+                    if bmiDoub < 18.5 {
+                        healthRisk = healthrisks[0]
+                    } else if bmiDoub < 23 {
+                        healthRisk = healthrisks[1]
+                    } else if bmiDoub < 27.5 {
+                        healthRisk = healthrisks[2]
+                    } else {
+                        healthRisk = healthrisks[3]
+                    }
                 } label: {
                     Text("Calculate!")
                         .foregroundColor(.white)
@@ -59,10 +71,15 @@ struct ContentView: View {
                 .padding()
                 .background(textBoxColour)
                 .cornerRadius(15)
-                VStack {
-                    Text("Health Risk: ")
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text("Health Risk: ")
+                            .foregroundColor(textColour)
+                        Spacer()
+                    }
+                    Text("")
+                    Text("\(healthRisk)")
                         .foregroundColor(textColour)
-                    Text("healthRisk")
                 }
                 .padding()
                 .background(textBoxColour)
