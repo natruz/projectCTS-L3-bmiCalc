@@ -17,6 +17,7 @@ struct ContentView: View {
     
     @State var bmi: String = ""
     @State var healthRisk = ""
+    
     let healthrisks = [
         "Possible nutritional deficiency and osteoporosis.",
         "Low risk (healthy range).",
