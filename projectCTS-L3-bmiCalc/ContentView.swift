@@ -10,7 +10,9 @@ import SwiftUI
 struct ContentView: View {
     
     let frameWidth = 250.0
-    let frameHeight = 50.0
+    let frameHeight = 40.0
+    
+    let buttonPadding = 6.0
     
     var body: some View {
         NavigationView {
@@ -26,7 +28,7 @@ struct ContentView: View {
                             .background(textBoxColour)
                             .cornerRadius(15)
                     }
-                    .padding(10)
+                    .padding(buttonPadding)
                     NavigationLink(destination: ColourSliderView()) {
                         Text("Colour Slider")
                             .frame(width: frameWidth, height: frameHeight)
@@ -36,6 +38,17 @@ struct ContentView: View {
                             .background(textBoxColour)
                             .cornerRadius(15)
                     }
+                    .padding(buttonPadding)
+                    Link(destination: URL(string: "https://www.youtube.com/watch?v=dQw4w9WgXcQ")!) {
+                        Text("Web View")
+                            .frame(width: frameWidth, height: frameHeight)
+                            .foregroundColor(.white)
+                            .font(.largeTitle)
+                            .padding()
+                            .background(textBoxColour)
+                            .cornerRadius(15)
+                    }
+                    .padding(buttonPadding)
                 }
             }
             .navigationBarHidden(true)
