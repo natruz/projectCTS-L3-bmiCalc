@@ -13,6 +13,8 @@
 		2E21099728B9A9DE00B6011D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21099628B9A9DE00B6011D /* ContentView.swift */; };
 		2E21099928B9A9E000B6011D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E21099828B9A9E000B6011D /* Assets.xcassets */; };
 		2E21099C28B9A9E000B6011D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E21099B28B9A9E000B6011D /* Preview Assets.xcassets */; };
+		2E4A08B528BCB46200AEC59C /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A08B428BCB46200AEC59C /* PickerView.swift */; };
+		2E4A08B728BCB80A00AEC59C /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A08B628BCB80A00AEC59C /* Pokemon.swift */; };
 		2EF2A9AE28BC5F93005FE5F0 /* ColourSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF2A9AD28BC5F93005FE5F0 /* ColourSliderView.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +26,8 @@
 		2E21099628B9A9DE00B6011D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2E21099828B9A9E000B6011D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E21099B28B9A9E000B6011D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2E4A08B428BCB46200AEC59C /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		2E4A08B628BCB80A00AEC59C /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		2EF2A9AD28BC5F93005FE5F0 /* ColourSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourSliderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,9 +63,11 @@
 			children = (
 				2E21099428B9A9DE00B6011D /* projectCTS_L3_bmiCalcApp.swift */,
 				2E21099628B9A9DE00B6011D /* ContentView.swift */,
+				2E4A08B428BCB46200AEC59C /* PickerView.swift */,
 				2EF2A9AD28BC5F93005FE5F0 /* ColourSliderView.swift */,
 				2E149BC928BA62B600E16FEA /* bmiCalcView.swift */,
 				2E149BCB28BA647600E16FEA /* Constants.swift */,
+				2E4A08B628BCB80A00AEC59C /* Pokemon.swift */,
 				2E21099828B9A9E000B6011D /* Assets.xcassets */,
 				2E21099A28B9A9E000B6011D /* Preview Content */,
 			);
@@ -146,8 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E4A08B728BCB80A00AEC59C /* Pokemon.swift in Sources */,
 				2E149BCA28BA62B600E16FEA /* bmiCalcView.swift in Sources */,
 				2E21099728B9A9DE00B6011D /* ContentView.swift in Sources */,
+				2E4A08B528BCB46200AEC59C /* PickerView.swift in Sources */,
 				2E21099528B9A9DE00B6011D /* projectCTS_L3_bmiCalcApp.swift in Sources */,
 				2EF2A9AE28BC5F93005FE5F0 /* ColourSliderView.swift in Sources */,
 				2E149BCC28BA647700E16FEA /* Constants.swift in Sources */,

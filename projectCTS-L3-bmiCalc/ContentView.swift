@@ -49,11 +49,20 @@ struct ContentView: View {
                             .cornerRadius(15)
                     }
                     .padding(buttonPadding)
+                    NavigationLink(destination: PickerView()) {
+                        Text("Picker")
+                            .frame(width: frameWidth, height: frameHeight)
+                            .foregroundColor(.white)
+                            .font(.largeTitle)
+                            .padding()
+                            .background(textBoxColour)
+                            .cornerRadius(15)
+                    }
+                    .padding(buttonPadding)
                 }
             }
             .navigationBarHidden(true)
         }
-        .accentColor(.white)
     }
 }
 
