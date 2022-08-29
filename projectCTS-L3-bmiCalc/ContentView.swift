@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let frameWidth = 250.0
+    let frameHeight = 50.0
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -15,6 +19,7 @@ struct ContentView: View {
                 VStack {
                     NavigationLink(destination: bmiCalcView()) {
                         Text("BMI Calculator")
+                            .frame(width: frameWidth, height: frameHeight)
                             .foregroundColor(.white)
                             .font(.largeTitle)
                             .padding()
@@ -24,6 +29,7 @@ struct ContentView: View {
                     .padding(10)
                     NavigationLink(destination: ColourSliderView()) {
                         Text("Colour Slider")
+                            .frame(width: frameWidth, height: frameHeight)
                             .foregroundColor(.white)
                             .font(.largeTitle)
                             .padding()
