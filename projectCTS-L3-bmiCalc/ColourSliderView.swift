@@ -17,9 +17,7 @@ struct ColourSliderView: View {
         let tempVar = String(format: "%g", n)
             return tempVar
     }
-    
-//    @State var updatedR = forTrailingZero(n: sliderR)
-     
+         
     var body: some View {
         ZStack {
             Color(red: sliderR / 255,
