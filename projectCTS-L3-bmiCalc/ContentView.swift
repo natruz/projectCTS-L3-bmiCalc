@@ -9,7 +9,32 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ZStack {
+                Image("ICT-L3-photo1")
+                VStack {
+                    NavigationLink(destination: bmiCalcView()) {
+                        Text("BMI Calculator")
+                            .foregroundColor(.white)
+                            .font(.largeTitle)
+                            .padding()
+                            .background(textBoxColour)
+                            .cornerRadius(15)
+                    }
+                    .padding(10)
+                    NavigationLink(destination: ColourSliderView()) {
+                        Text("Colour Slider")
+                            .foregroundColor(.white)
+                            .font(.largeTitle)
+                            .padding()
+                            .background(textBoxColour)
+                            .cornerRadius(15)
+                    }
+                }
+            }
+            .navigationBarHidden(true)
+        }
+        .accentColor(.white)
     }
 }
 

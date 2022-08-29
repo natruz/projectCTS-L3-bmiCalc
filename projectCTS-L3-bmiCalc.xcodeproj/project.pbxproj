@@ -8,19 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		2E149BCA28BA62B600E16FEA /* bmiCalcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E149BC928BA62B600E16FEA /* bmiCalcView.swift */; };
+		2E149BCC28BA647700E16FEA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E149BCB28BA647600E16FEA /* Constants.swift */; };
 		2E21099528B9A9DE00B6011D /* projectCTS_L3_bmiCalcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21099428B9A9DE00B6011D /* projectCTS_L3_bmiCalcApp.swift */; };
 		2E21099728B9A9DE00B6011D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21099628B9A9DE00B6011D /* ContentView.swift */; };
 		2E21099928B9A9E000B6011D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E21099828B9A9E000B6011D /* Assets.xcassets */; };
 		2E21099C28B9A9E000B6011D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E21099B28B9A9E000B6011D /* Preview Assets.xcassets */; };
+		2EF2A9AE28BC5F93005FE5F0 /* ColourSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF2A9AD28BC5F93005FE5F0 /* ColourSliderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E149BC928BA62B600E16FEA /* bmiCalcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bmiCalcView.swift; sourceTree = "<group>"; };
+		2E149BCB28BA647600E16FEA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2E21099128B9A9DE00B6011D /* projectCTS-L3-bmiCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "projectCTS-L3-bmiCalc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E21099428B9A9DE00B6011D /* projectCTS_L3_bmiCalcApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectCTS_L3_bmiCalcApp.swift; sourceTree = "<group>"; };
 		2E21099628B9A9DE00B6011D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2E21099828B9A9E000B6011D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E21099B28B9A9E000B6011D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2EF2A9AD28BC5F93005FE5F0 /* ColourSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourSliderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			children = (
 				2E21099428B9A9DE00B6011D /* projectCTS_L3_bmiCalcApp.swift */,
 				2E21099628B9A9DE00B6011D /* ContentView.swift */,
+				2EF2A9AD28BC5F93005FE5F0 /* ColourSliderView.swift */,
 				2E149BC928BA62B600E16FEA /* bmiCalcView.swift */,
+				2E149BCB28BA647600E16FEA /* Constants.swift */,
 				2E21099828B9A9E000B6011D /* Assets.xcassets */,
 				2E21099A28B9A9E000B6011D /* Preview Content */,
 			);
@@ -143,6 +149,8 @@
 				2E149BCA28BA62B600E16FEA /* bmiCalcView.swift in Sources */,
 				2E21099728B9A9DE00B6011D /* ContentView.swift in Sources */,
 				2E21099528B9A9DE00B6011D /* projectCTS_L3_bmiCalcApp.swift in Sources */,
+				2EF2A9AE28BC5F93005FE5F0 /* ColourSliderView.swift in Sources */,
+				2E149BCC28BA647700E16FEA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +279,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"projectCTS-L3-bmiCalc/Preview Content\"";
+				DEVELOPMENT_TEAM = HD67338BAJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -299,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"projectCTS-L3-bmiCalc/Preview Content\"";
+				DEVELOPMENT_TEAM = HD67338BAJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

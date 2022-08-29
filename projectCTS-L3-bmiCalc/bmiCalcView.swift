@@ -11,10 +11,6 @@ struct bmiCalcView: View {
     
     @State var height: String = ""
     @State var weight: String = ""
-
-    let textBoxColour = Color(red: 143/255, green: 161/255, blue: 139/255)
-    let textColour = Color(red: 100/255, green: 100/255, blue: 100/255)
-    
     @State var bmi: String = ""
     @State var healthRisk = ""
     
